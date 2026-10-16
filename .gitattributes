@@ -1,0 +1,4 @@
+proprietary/vendor/lib64/libaibc_tuning.so filter=lfs diff=lfs merge=lfs -text
+radio/md1img.img filter=lfs diff=lfs merge=lfs -text
+face/proprietary/libstfaceunlockocl.so filter=lfs diff=lfs merge=lfs -text
+proprietary/product/app/Biometric/Biometric.apk filter=lfs diff=lfs merge=lfs -text
