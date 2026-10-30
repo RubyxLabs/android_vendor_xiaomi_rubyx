@@ -339,7 +339,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
-    vendor/xiaomi/rubyx/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootCA.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootCA.crt \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootG2.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootG2.crt \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/md/cacerts/ikev2/DigiCertGlobalRootG3.crt:$(TARGET_COPY_OUT_VENDOR)/etc/md/cacerts/ikev2/DigiCertGlobalRootG3.crt \
@@ -1917,8 +1916,7 @@ PRODUCT_PACKAGES += \
     thermal \
     thermal_manager \
     thermalloadalgod \
-    vpud \
-    wlan_assistant
+    vpud
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
