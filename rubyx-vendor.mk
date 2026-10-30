@@ -1849,7 +1849,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
