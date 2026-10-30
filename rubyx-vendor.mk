@@ -826,8 +826,6 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libvpud_vcodec \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     APUWareApusysServer \
     APUWareUtilsServer \
     APUWareXrpServer_v2 \
