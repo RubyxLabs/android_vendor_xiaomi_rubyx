@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/rubyx
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rubyx/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/xiaomi/rubyx/proprietary/vendor/etc/apdb/APDB_MT6853_S01__W2302:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6853_S01__W2302 \
@@ -1864,12 +1865,30 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.soter@1.0 \
     vendor.microtrust.hardware.thh@2.0 \
     wechat.beanpod \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     MtkGbaService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    ImsService \
     com.android.hotwordenrollment.common.util \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telephony-base \
     android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml \
     fod.xml \
     gnss-mtk.xml \
@@ -1916,7 +1935,8 @@ PRODUCT_PACKAGES += \
     thermal \
     thermal_manager \
     thermalloadalgod \
-    vpud
+    vpud \
+    vtservice
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
@@ -1931,3 +1951,8 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libneuron_runtime_so \
     vendor_lib64_libnir_neon_driver_so \
     vendor_lib64_libpq_prot_so
+
+PRODUCT_BOOT_JARS += \
+    system_ext:mediatek-ims-base \
+    system_ext:mediatek-ims-common \
+    system_ext:mediatek-telephony-base
